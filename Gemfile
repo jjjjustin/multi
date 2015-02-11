@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
+ruby '2.2.0'
 
 
+
+gem 'kaminari'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -51,9 +54,10 @@ gem 'aws-sdk'
 gem 'figaro'
 gem 'devise'
 group :test, :development do
-  gem 'faker'
-end
 
+gem 'faker'
+end
+gem 'quiet_assets'
 gem 'bourbon'
 gem 'neat'
 gem 'bitters'
